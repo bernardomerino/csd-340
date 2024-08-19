@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 2.2 - Building a Web Page">
+    <meta name="author" content="<Your Name>">
+    <meta name="keywords" content="HTML, CSS, Bellevue University">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="<YourLastName>_Mod2_2.css">
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 2.2 – Building a Web Page Exercise, Part 2</h1>
+        <h2>Chapter Title: Introduction</h2>
+
+        <p class="intro">My Childhood was rough.</p>
+        <p>I Love to Skate and go to the Gym</p>
+        <p>I have a sister, and a mother and a father.</p>
+        <p>Html is Tricky!</p>
+
+        <hr />
+
+        <address>
+            <p><a href="https://www.bellevue.edu" target="_blank">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+</body>
+</html>
