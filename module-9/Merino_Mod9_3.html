@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        // JavaScript variables to hold the replacement text for each span
+        var firstVariableValue = "journey";
+        var secondVariableValue = "bravery";
+        var thirdVariableValue = "discovery";
+        var fourthVariableValue = "adventure";
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    </header>
+
+    <!-- Main Content -->
+    <p>Once upon a time, there was a ______________ that led to _______________.</p>
+    <p>During this ______________, the hero faced many challenges, but with ______________, they emerged victorious.</p>
+    <p>The end of the ______________ marked the beginning of a new ______________ filled with hope and new possibilities.</p>
+
+    <!-- Span tags for replacing with JavaScript variables -->
+    <p>
+        <span id="first">__________</span> 
+        <button type="button" onclick="document.getElementById('first').innerHTML = firstVariableValue">Fill 1</button>
+    </p>
+    <p>
+        <span id="second">__________</span> 
+        <button type="button" onclick="document.getElementById('second').innerHTML = secondVariableValue">Fill 2</button>
+    </p>
+    <p>
+        <span id="third">__________</span> 
+        <button type="button" onclick="document.getElementById('third').innerHTML = thirdVariableValue">Fill 3</button>
+    </p>
+    <p>
+        <span id="fourth">__________</span> 
+        <button type="button" onclick="document.getElementById('fourth').innerHTML = fourthVariableValue">Fill 4</button>
+    </p>
+
+    <footer>
+        <p>&copy; 2024 Merino</p>
+    </footer>
+</body>
+</html>
