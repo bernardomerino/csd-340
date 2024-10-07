@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <label for="inputText">Enter a value:</label>
+    <input type="text" id="inputText">
+    <br><br>
+
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="displayArray()">Display</button>
+
+    <p id="arrayContents"></p>
+
+    <script>
+  
+        let itemsArray = [];
+
+        function addItem() {
+            let inputText = document.getElementById("inputText").value;
+            if (inputText) {
+                itemsArray.push(inputText);
+                alert(`Added "${inputText}" to the list at position ${itemsArray.length}.`);
+                document.getElementById("inputText").value = ""; // Clear the input box
+            } else {
+                alert("Please enter a value before adding.");
+            }
+        }
+
+        function deleteLast() {
+            if (itemsArray.length > 0) {
+                let deletedItem = itemsArray.pop();
+                alert(`Deleted "${deletedItem}" from the list.`);
+            } else {
+                alert("No items to delete.");
+            }
+        }
+      
+        function displayArray() {
+            if (itemsArray.length > 0) {
+                let output = "";
+                for (let i = 0; i < itemsArray.length; i++) {
+                    output += (i + 1) + ". " + itemsArray[i] + "<br>";
+                }
+                document.getElementById("arrayContents").innerHTML = output;
+            } else {
+                document.getElementById("arrayContents").innerHTML = "No items to display.";
+            }
+        }
+    </script>
+</body>
+</html>
