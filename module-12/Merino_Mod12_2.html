@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            margin-right: 10px;
+        }
+        #bookList {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    <button onclick="displayTopToBottom()">Top to Bottom</button>
+    <button onclick="displayBottomToTop()">Bottom to Top</button>
+    <div id="bookList"></div>
+
+    <script>
+        
+        var books = [
+            "The Great Gatsby",
+            "1984",
+            "To Kill a Mockingbird",
+            "Harry Potter and the Sorcerers Stone",
+            "The Lord of the Rings",
+            "Pride and Prejudice",
+            "The Hobbit",
+            "Moby Dick",
+            "War and Peace",
+            "The Catcher in the Rye"
+        ];
+
+        // Function to display books in ascending order
+        function displayTopToBottom() {
+            var sortedBooks = books.slice().sort(); 
+            document.getElementById("bookList").innerHTML = sortedBooks.join("<br>");
+        }
+
+        // Function to display books in descending order
+        function displayBottomToTop() {
+            var sortedBooks = books.slice().sort().reverse(); 
+            document.getElementById("bookList").innerHTML = sortedBooks.join("<br>");
+        }
+    </script>
+</body>
+</html>
